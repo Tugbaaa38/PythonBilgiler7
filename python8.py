@@ -87,3 +87,30 @@ eklenecek_ogrenciler.clear()
 
 print(myList)            #ciktisi:  [] olacaktir.Cunku listemizdeki tum elemanlari sildik.
 print(ogrenciler)
+
+#range() fonksiyonuna bakacak olursak:
+sayi_listesi=list(range(1,15,2))        #1 den basla 15 e kadar 2 ser 2 ser git..
+print(sayi_listesi)
+
+liste=list(range(20))                   #0 dan baslar 20 ye kadar olan sayilari ekrana yazdirir.
+print(liste)
+
+liste2=list(range(100,0,-10))           #100 den geri geri 0'a kadar gider.
+print(liste2)
+
+sayi_listesi2=list(range(0,50))
+ciftler=sayi_listesi2[::2]
+print(ciftler)
+
+#random modulu nasil kullanilir?
+
+import random
+
+number=list(range(200))
+print(number)
+
+rastgele=random.choice(number)
+print(rastgele)                  #her calistirdigimizda farkli bir deger dondurur.
+
+rastgele2=random.randint(0,100)  
+print(rastgele2)
